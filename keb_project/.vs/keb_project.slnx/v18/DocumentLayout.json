@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\keb_C\\workspace\\keb_project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|c:\\keb_c\\workspace\\keb_project\\booking2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:booking2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|c:\\keb_c\\workspace\\keb_project\\booking_check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:booking_check.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|c:\\keb_c\\workspace\\keb_project\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|c:\\keb_c\\workspace\\keb_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|C:\\keb_C\\workspace\\keb_project\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|c:\\keb_c\\workspace\\keb_project\\main_moviechart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:main_moviechart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|C:\\keb_C\\workspace\\keb_project\\main_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{558814DB-5C14-05A3-5868-62916494F63A}|keb_project.csproj|solutionrelative:main_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1295,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "booking2.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\booking2.cs",
+              "RelativeDocumentMoniker": "booking2.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\booking2.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "booking2.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:22:00.77Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "booking_Check.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\booking_Check.cs",
+              "RelativeDocumentMoniker": "booking_Check.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\booking_Check.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "booking_Check.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:21:55.764Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "booking.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\booking.cs",
+              "RelativeDocumentMoniker": "booking.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\booking.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "booking.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:21:08.857Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main_MovieChart.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\Main_MovieChart.cs",
+              "RelativeDocumentMoniker": "Main_MovieChart.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\Main_MovieChart.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main_MovieChart.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:19:51.105Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAWwGkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:10:57.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\MainForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "MainForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:03:27.131Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Main_main.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\keb_C\\workspace\\keb_project\\Main_main.cs",
+              "RelativeDocumentMoniker": "Main_main.cs",
+              "ToolTip": "C:\\keb_C\\workspace\\keb_project\\Main_main.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Main_main.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T09:03:18.046Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 302,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
