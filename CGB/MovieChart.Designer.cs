@@ -1,160 +1,157 @@
-﻿namespace CGB
+namespace CGB
 {
     partial class MovieChart
     {
-        /// <summary> 
-        /// 필수 디자이너 변수입니다.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary> 
-        /// 사용 중인 모든 리소스를 정리합니다.
-        /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
-        #region 구성 요소 디자이너에서 생성한 코드
-
-        /// <summary> 
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieChart));
-            txt_info = new TextBox();
-            img_poster1 = new PictureBox();
-            lb_title = new Label();
-            btn_booking_1 = new Button();
-            img_poster2 = new PictureBox();
-            img_poster3 = new PictureBox();
-            img_poster4 = new PictureBox();
+            img_poster1   = new PictureBox();
+            img_poster2   = new PictureBox();
+            img_poster3   = new PictureBox();
+            img_poster4   = new PictureBox();
+            pnl_info      = new Panel();
+            lb_title      = new Label();
+            lb_opendate   = new Label();
+            lb_rating     = new Label();
+            lb_runtime    = new Label();
+            lb_dist       = new Label();
+            txt_info      = new TextBox();
+
             ((System.ComponentModel.ISupportInitialize)img_poster1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)img_poster2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)img_poster3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)img_poster4).BeginInit();
+            pnl_info.SuspendLayout();
             SuspendLayout();
-            // 
-            // txt_info
-            // 
-            txt_info.Location = new Point(15, 457);
-            txt_info.Multiline = true;
-            txt_info.Name = "txt_info";
-            txt_info.Size = new Size(1234, 243);
-            txt_info.TabIndex = 14;
-            txt_info.Text = resources.GetString("txt_info.Text");
-            // 
-            // img_poster1
-            // 
-            img_poster1.Cursor = Cursors.Hand;
-            img_poster1.Image = (Image)resources.GetObject("img_poster1.Image");
-            img_poster1.Location = new Point(15, 34);
-            img_poster1.Name = "img_poster1";
-            img_poster1.Size = new Size(286, 363);
+
+            // ── Poster 1 ─────────────────────────────────────────────────
+            img_poster1.Image    = (System.Drawing.Image)resources.GetObject("img_poster1.Image");
+            img_poster1.Location = new System.Drawing.Point(25, 10);
+            img_poster1.Size     = new System.Drawing.Size(284, 300);
             img_poster1.SizeMode = PictureBoxSizeMode.StretchImage;
-            img_poster1.TabIndex = 8;
-            img_poster1.TabStop = false;
-            img_poster1.Tag = "p1";
-            img_poster1.Click += poster_click;
-            // 
-            // lb_title
-            // 
-            lb_title.AutoSize = true;
-            lb_title.Font = new Font("맑은 고딕", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_title.Location = new Point(15, 418);
-            lb_title.Name = "lb_title";
-            lb_title.Size = new Size(126, 25);
-            lb_title.TabIndex = 12;
-            lb_title.Text = "왕과사는남자";
-            // 
-            // btn_booking_1
-            // 
-            btn_booking_1.Font = new Font("맑은 고딕", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_booking_1.Location = new Point(598, 725);
-            btn_booking_1.Name = "btn_booking_1";
-            btn_booking_1.Size = new Size(105, 46);
-            btn_booking_1.TabIndex = 13;
-            btn_booking_1.Tag = "왕사남";
-            btn_booking_1.Text = "예매하기";
-            btn_booking_1.UseVisualStyleBackColor = true;
-            btn_booking_1.Visible = false;
-            btn_booking_1.Click += btn_booking_1_Click;
-            // 
-            // img_poster2
-            // 
-            img_poster2.Cursor = Cursors.Hand;
-            img_poster2.Image = (Image)resources.GetObject("img_poster2.Image");
-            img_poster2.Location = new Point(319, 34);
-            img_poster2.Name = "img_poster2";
-            img_poster2.Size = new Size(303, 363);
+            img_poster1.Cursor   = Cursors.Hand;
+            img_poster1.Tag      = "p1";
+            img_poster1.Click   += poster_click;
+
+            // ── Poster 2 ─────────────────────────────────────────────────
+            img_poster2.Image    = (System.Drawing.Image)resources.GetObject("img_poster2.Image");
+            img_poster2.Location = new System.Drawing.Point(339, 10);
+            img_poster2.Size     = new System.Drawing.Size(284, 300);
             img_poster2.SizeMode = PictureBoxSizeMode.StretchImage;
-            img_poster2.TabIndex = 9;
-            img_poster2.TabStop = false;
-            img_poster2.Tag = "p2";
-            img_poster2.Click += poster_click;
-            // 
-            // img_poster3
-            // 
-            img_poster3.Cursor = Cursors.Hand;
-            img_poster3.Image = (Image)resources.GetObject("img_poster3.Image");
-            img_poster3.Location = new Point(965, 34);
-            img_poster3.Name = "img_poster3";
-            img_poster3.Size = new Size(298, 363);
+            img_poster2.Cursor   = Cursors.Hand;
+            img_poster2.Tag      = "p2";
+            img_poster2.Click   += poster_click;
+
+            // ── Poster 3 ─────────────────────────────────────────────────
+            img_poster3.Image    = (System.Drawing.Image)resources.GetObject("img_poster3.Image");
+            img_poster3.Location = new System.Drawing.Point(653, 10);
+            img_poster3.Size     = new System.Drawing.Size(284, 300);
             img_poster3.SizeMode = PictureBoxSizeMode.StretchImage;
-            img_poster3.TabIndex = 10;
-            img_poster3.TabStop = false;
-            img_poster3.Tag = "p4";
-            img_poster3.Click += poster_click;
-            // 
-            // img_poster4
-            // 
-            img_poster4.Cursor = Cursors.Hand;
-            img_poster4.Image = (Image)resources.GetObject("img_poster4.Image");
-            img_poster4.Location = new Point(646, 34);
-            img_poster4.Name = "img_poster4";
-            img_poster4.Size = new Size(291, 363);
+            img_poster3.Cursor   = Cursors.Hand;
+            img_poster3.Tag      = "p3";
+            img_poster3.Click   += poster_click;
+
+            // ── Poster 4 ─────────────────────────────────────────────────
+            img_poster4.Image    = (System.Drawing.Image)resources.GetObject("img_poster4.Image");
+            img_poster4.Location = new System.Drawing.Point(967, 10);
+            img_poster4.Size     = new System.Drawing.Size(284, 300);
             img_poster4.SizeMode = PictureBoxSizeMode.StretchImage;
-            img_poster4.TabIndex = 11;
-            img_poster4.TabStop = false;
-            img_poster4.Tag = "p3";
-            img_poster4.Click += poster_click;
-            // 
-            // MovieChart
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(txt_info);
+            img_poster4.Cursor   = Cursors.Hand;
+            img_poster4.Tag      = "p4";
+            img_poster4.Click   += poster_click;
+
+            // ── pnl_info (movie detail section) ─────────────────────────
+            pnl_info.BackColor = Theme.CardBG;
+            pnl_info.Location  = new System.Drawing.Point(0, 318);
+            pnl_info.Size      = new System.Drawing.Size(1280, 372);
+            pnl_info.Controls.AddRange(new Control[] {
+                lb_title, lb_opendate, lb_rating, lb_runtime, lb_dist, txt_info
+            });
+
+            // lb_title
+            lb_title.Text      = "왕과 사는 남자";
+            lb_title.Font      = new System.Drawing.Font("맑은 고딕", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lb_title.ForeColor = Theme.TextPrimary;
+            lb_title.Location  = new System.Drawing.Point(20, 14);
+            lb_title.AutoSize  = true;
+
+            // lb_opendate
+            lb_opendate.Text      = "개봉일: ";
+            lb_opendate.Font      = new System.Drawing.Font("맑은 고딕", 9.5F, System.Drawing.GraphicsUnit.Point);
+            lb_opendate.ForeColor = Theme.TextSub;
+            lb_opendate.Location  = new System.Drawing.Point(20, 58);
+            lb_opendate.AutoSize  = true;
+
+            // lb_rating
+            lb_rating.Text      = "등급: ";
+            lb_rating.Font      = new System.Drawing.Font("맑은 고딕", 9.5F, System.Drawing.GraphicsUnit.Point);
+            lb_rating.ForeColor = Theme.TextSub;
+            lb_rating.Location  = new System.Drawing.Point(185, 58);
+            lb_rating.AutoSize  = true;
+
+            // lb_runtime
+            lb_runtime.Text      = "러닝타임: ";
+            lb_runtime.Font      = new System.Drawing.Font("맑은 고딕", 9.5F, System.Drawing.GraphicsUnit.Point);
+            lb_runtime.ForeColor = Theme.TextSub;
+            lb_runtime.Location  = new System.Drawing.Point(355, 58);
+            lb_runtime.AutoSize  = true;
+
+            // lb_dist
+            lb_dist.Text      = "배급: ";
+            lb_dist.Font      = new System.Drawing.Font("맑은 고딕", 9.5F, System.Drawing.GraphicsUnit.Point);
+            lb_dist.ForeColor = Theme.TextSub;
+            lb_dist.Location  = new System.Drawing.Point(500, 58);
+            lb_dist.AutoSize  = true;
+
+            // txt_info
+            txt_info.BackColor    = Theme.CardBG;
+            txt_info.ForeColor    = Theme.TextSub;
+            txt_info.BorderStyle  = BorderStyle.None;
+            txt_info.Font         = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.GraphicsUnit.Point);
+            txt_info.Location     = new System.Drawing.Point(20, 90);
+            txt_info.Multiline    = true;
+            txt_info.ReadOnly     = true;
+            txt_info.ScrollBars   = ScrollBars.Vertical;
+            txt_info.Size         = new System.Drawing.Size(1240, 272);
+
+            // ── UserControl ──────────────────────────────────────────────
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode       = AutoScaleMode.Font;
+            BackColor           = Theme.BG;
             Controls.Add(img_poster1);
-            Controls.Add(lb_title);
-            Controls.Add(btn_booking_1);
             Controls.Add(img_poster2);
             Controls.Add(img_poster3);
             Controls.Add(img_poster4);
+            Controls.Add(pnl_info);
             Name = "MovieChart";
-            Size = new Size(1279, 798);
+            Size = new System.Drawing.Size(1280, 690);
+
             ((System.ComponentModel.ISupportInitialize)img_poster1).EndInit();
             ((System.ComponentModel.ISupportInitialize)img_poster2).EndInit();
             ((System.ComponentModel.ISupportInitialize)img_poster3).EndInit();
             ((System.ComponentModel.ISupportInitialize)img_poster4).EndInit();
+            pnl_info.ResumeLayout(false);
+            pnl_info.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
-        #endregion
-
-        private TextBox txt_info;
         private PictureBox img_poster1;
-        private Label lb_title;
-        private Button btn_booking_1;
         private PictureBox img_poster2;
         private PictureBox img_poster3;
         private PictureBox img_poster4;
+        private Panel      pnl_info;
+        private Label      lb_title;
+        private Label      lb_opendate;
+        private Label      lb_rating;
+        private Label      lb_runtime;
+        private Label      lb_dist;
+        private TextBox    txt_info;
     }
 }

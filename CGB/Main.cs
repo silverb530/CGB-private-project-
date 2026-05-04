@@ -1,104 +1,49 @@
-
-
-namespace CGB
+ï»¿namespace CGB
 {
     public partial class Main : Form
     {
         public Main()
         {
             InitializeComponent();
-            DataTemp.initMovieData();
-
-            Main_main main = new Main_main();
-            ShowMenuScreen(main);
-
+            ShowMenuScreen(new Main_main());
         }
 
-
-        // È­¸é ÀÌµ¿
-        public void ShowMenuScreen(UserControl nextForm)
+        public void ShowMenuScreen(UserControl screen)
         {
-            if (DataTemp.currentUser != null)
-            {
-                btn_login.Visible = false;
-                btn_join.Visible = false;
-                btn_logout.Visible = true;
-                lb_resCnfm.Visible = true;
-            }
-            else
-            {
-                btn_login.Visible = true;
-                btn_join.Visible = true;
-                btn_logout.Visible = false;
-                lb_resCnfm.Visible = false;
-            }
+            bool loggedIn = DataTemp.currentUser != null;
+            btn_login.Visible  = !loggedIn;
+            btn_join.Visible   = !loggedIn;
+            btn_logout.Visible = loggedIn;
+            lb_resCnfm.Visible = loggedIn;
 
             panel_main.Controls.Clear();
-            if (nextForm == null)
-            {
-                nextForm = new Main_main();
-            }
-            panel_main.Controls.Add(nextForm);
-
+            var next = screen ?? new Main_main();
+            next.Dock = DockStyle.Fill;
+            panel_main.Controls.Add(next);
         }
 
-        // ·Î±×ÀÎ¹öÆ°
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-            panel_main.Controls.Clear();
-            Login login = new Login();
-            panel_main.Controls.Add(login);
+        private void pictureBox1_Click(object sender, EventArgs e) => ShowMenuScreen(new Main_main());
 
-        }
+        private void btn_login_Click(object sender, EventArgs e)    => ShowMenuScreen(new Login());
+        private void btn_join_Click(object sender, EventArgs e)     => ShowMenuScreen(new Join());
         private void btn_logout_Click(object sender, EventArgs e)
         {
             DataTemp.currentUser = null;
             ShowMenuScreen(new Main_main());
         }
 
-
-        // È¸¿ø°¡ÀÔ¹öÆ°
-        private void btn_join_Click(object sender, EventArgs e)
-        {
-            Join join = new Join();
-
-            panel_main.Controls.Clear();
-            panel_main.Controls.Add(join);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            ShowMenuScreen(new Main_main());
-        }
-
         private void menu_Click(object sender, EventArgs e)
         {
-            Label menu = sender as Label;
-            string menuNm = menu.Name;
-
-            panel_main.Controls.Clear();
-
-            if (menuNm == "lb_menu_1")
-            {
+            string name = (sender as Label)?.Name;
+            if (name == "lb_menu_1")
                 ShowMenuScreen(new MovieChart());
-
-            }
-            else if (menuNm == "lb_menu_book")
+            else if (name == "lb_menu_book")
             {
-                if (DataTemp.currentUser == null)
-                {
-                    MessageBox.Show("·Î±×ÀÎ ÈÄ ¿¹¸Å°¡ °¡´ÉÇÕ´Ï´Ù");
-                    ShowMenuScreen(new Login());
-                }
-                else
-                {
-                    //ShowMenuScreen(new booking());
-                }
+                if (DataTemp.currentUser == null) { MessageBox.Show("ë¡œê·¸ì¸ í›„ ì´ìš©í•˜ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.", "ì•Œë¦¼"); ShowMenuScreen(new Login()); }
+                else ShowMenuScreen(new Schedule());
             }
-            else if (menuNm == "lb_resCnfm")
-            {
-                //ShowMenuScreen(new booking_Check());
-            }
+            else if (name == "lb_resCnfm")
+                ShowMenuScreen(new BookingCheck());
         }
     }
 }

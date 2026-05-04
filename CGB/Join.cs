@@ -1,13 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
 namespace CGB
 {
     public partial class Join : UserControl
@@ -19,22 +9,30 @@ namespace CGB
 
         private void btn_join_Click(object sender, EventArgs e)
         {
-            string id = txt_id.Text;
-            string pw = txt_pw.Text;
-            string name = txt_name.Text;
+            string id    = txt_id.Text.Trim();
+            string pw    = txt_pw.Text;
+            string name  = txt_name.Text.Trim();
+            string phone = txt_phone.Text.Trim().Replace("-", "");
 
-            DataClass.UserInfo ui = new DataClass.UserInfo(name, id, pw);
-
-            DataTemp.usersList.Add(ui);
-
-            MessageBox.Show("환영합니다 " + ui.name + "님! 로그인 후 이용 해 주세요");
-
-            var main = this.FindForm() as Main;
-
-            if (main != null)
+            if (id == "" || pw == "" || name == "" || phone == "")
             {
-                main.ShowMenuScreen(new Main_main());
+                MessageBox.Show("모든 항목을 입력해 주세요.", "알림");
+                return;
             }
+
+            foreach (var u in DataTemp.usersList)
+            {
+                if (u.id == id)
+                {
+                    MessageBox.Show("이미 사용 중인 아이디입니다.", "알림");
+                    return;
+                }
+            }
+
+            DataTemp.usersList.Add(new DataClass.UserInfo(name, id, pw, phone, ""));
+            MessageBox.Show($"환영합니다, {name}님!\n로그인 후 이용해 주세요.", "가입 완료");
+
+            (this.FindForm() as Main)?.ShowMenuScreen(new Login());
         }
     }
 }
